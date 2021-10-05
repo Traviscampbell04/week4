@@ -26,10 +26,13 @@ function boring(){
 		a1.style.color = "black";
 		a1.style.textDecoration="none";
 	}
-	
+}
+
 function moo(){
 	alert("Moo");
-	var  a1 = document.getElementById("area1")
-
+	var a1 = document.getElementById("area1")
+	var uppera1 = a1.value.toUpperCase();
+	var parts = uppera1.split(".");
+	a1.value = parts.join("-Moo.");
 	
 }
